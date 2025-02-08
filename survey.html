@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="survey.css">
+</head>
+<header>
+    <h1>Leave a Message to a Future You</h1>
+    <p class="intro-text">
+        The answers you provide will shape your journey ahead. Please take your time to reflect and choose wisely.
+    </p>
+</header>
+<body>
+    <section id="survey-form">
+    <form action="submit-survey.php" method="POST">
+        <!-- Text Box Question -->
+        <label for="name">What's your name?</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Radio Button Question -->
+        <label for="future">Putting it bluntly, what is it you want your future to be?</label>
+        <div class="radio-buttons">
+            <input type="radio" id="career" name="future" value="career">
+            <label for="career">Career Success</label>
+
+            <input type="radio" id="family" name="future" value="family">
+            <label for="family">Family and Relationships</label>
+
+            <input type="radio" id="adventure" name="future" value="adventure">
+            <label for="adventure">Adventure and Travel</label>
+
+            <input type="radio" id="other" name="future" value="other">
+            <label for="other">Other (Please specify in comments)</label>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <label for="time">When do you want your future? (Min 15 years)</label>
+        <select id="time" name="time">
+            <option value="15">15 years</option>
+            <option value="20">20 years</option>
+            <option value="25">25 years</option>
+            <option value="30">30 years</option>
+            <option value="35">35 years</option>
+            <option value="40">40 years</option>
+            <option value="45">45 years</option>
+            <option value="50">50 years</option>
+        </select>
+
+        <!-- Question 1 -->
+        <label for="q1">What is the biggest fear you have about the future, and how do you plan to face it?</label>
+        <textarea id="q1" name="q1" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 2 -->
+        <label for="q2">If you could accomplish one thing in the next 5 years, what would it be and why?</label>
+        <textarea id="q2" name="q2" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 3 -->
+        <label for="q3">If you could give your younger self one piece of advice about the future, what would it be?</label>
+        <textarea id="q3" name="q3" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 4 -->
+        <label for="q4">What new skill or knowledge would you love to learn in the next year?</label>
+        <textarea id="q4" name="q4" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 5 -->
+        <label for="q5">How do you envision your personal life in the future, and what would make you feel fulfilled?</label>
+        <textarea id="q5" name="q5" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 6 -->
+        <label for="q6">What’s the one thing that, if you focused on it now, would set your future on the right path?</label>
+        <textarea id="q6" name="q6" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 7 -->
+        <label for="q7">What habits or routines are you building now that you believe will shape your future?</label>
+        <textarea id="q7" name="q7" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 8 -->
+        <label for="q8">What part of yourself do you think you might have to sacrifice to truly achieve your dreams?</label>
+        <textarea id="q8" name="q8" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 9 -->
+        <label for="q9">What is one thing in your life right now that you’d most like to change for a better future?</label>
+        <textarea id="q9" name="q9" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 10 -->
+        <label for="q10">What’s one thing you want to contribute to the world in your lifetime?</label>
+        <textarea id="q10" name="q10" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 11 -->
+        <label for="q11">If you could make one decision today that would lead to your most fulfilling future, what would it be?</label>
+        <textarea id="q11" name="q11" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 12 -->
+        <label for="q12">If you knew your life was going to take an unexpected turn in the next few years, would you want to know or keep it a mystery?</label>
+        <div class="radio-buttons">
+        <input type="radio" id="q12-know" name="q12" value="know">
+        <label for="q12-know">Know</label><br>
+        <input type="radio" id="q12-mystery" name="q12" value="mystery">
+        <label for="q12-mystery">Keep it a mystery</label><br>
+        </div>
+
+        <!-- Question 13 -->
+        <label for="q13">What is the one thing you’re most afraid to lose in life, and what steps are you taking to protect it — or are you avoiding it entirely?</label>
+        <textarea id="q13" name="q13" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 14 -->
+        <label for="q14">If you could fix a major injustice in the world by committing a small illegal act, would you take the risk?</label>
+        <div class="radio-buttons">
+        <input type="radio" id="q14-yes" name="q14" value="yes">
+        <label for="q14-yes">Yes</label><br>
+        <input type="radio" id="q14-no" name="q14" value="no">
+        <label for="q14-no">No</label><br>
+        </div>
+
+        <!-- Question 15 -->
+        <label for="q15">What do you think you’ll regret not doing if you don’t start today?</label>
+        <textarea id="q15" name="q15" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 16 -->
+        <label for="q16">Do you feel like your future is something you can shape, or is it already determined?</label>
+        <textarea id="q16" name="q16" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 17 -->
+        <label for="q17">What will be the most important factor in your happiness 10 years from now?</label>
+        <textarea id="q17" name="q17" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 18 -->
+        <label for="q18">How do you want your future self to feel when they look back on the choices you're making today?</label>
+        <textarea id="q18" name="q18" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 19 -->
+        <label for="q19">What impact do you hope to have on the people around you as you move forward in life?</label>
+        <textarea id="q19" name="q19" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 20 -->
+        <label for="q20">What’s one big goal you hope to have reached by the time you turn 40?</label>
+        <textarea id="q20" name="q20" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 21 -->
+        <label for="q21">What part of yourself do you think will surprise you the most in 20 years?</label>
+        <textarea id="q21" name="q21" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 22 -->
+        <label for="q22">If you could live anywhere in the world for the next decade, where would you choose, and why?</label>
+        <textarea id="q22" name="q22" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 23 -->
+        <label for="q23">What do you think your ideal life would look like if money were no object?</label>
+        <textarea id="q23" name="q23" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 24 -->
+        <label for="q24">How do you imagine spending your retirement years? What will you be doing?</label>
+        <textarea id="q24" name="q24" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 25 -->
+        <label for="q25">If you could wake up tomorrow with one new ability or talent, what would it be?</label>
+        <textarea id="q25" name="q25" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 26 -->
+        <label for="q26">What’s the one thing that keeps you awake at night when you think about your future?</label>
+        <textarea id="q26" name="q26" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 27 -->
+        <label for="q27">What personal trait do you wish to develop that will benefit your future self?</label>
+        <textarea id="q27" name="q27" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 28 -->
+        <label for="q28">In the next 10 years, how do you see your relationship with technology changing?</label>
+        <textarea id="q28" name="q28" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 29 -->
+        <label for="q29">How would you describe the person you hope to become by the end of your life?</label>
+        <textarea id="q29" name="q29" rows="4" placeholder="Your answer..."></textarea><br>
+
+        <!-- Question 30 -->
+        <label for="q30">If you knew a secret that could harm someone else but protect another, would you choose to reveal it or keep quiet?</label>
+        <div class="radio-buttons">
+        <input type="radio" id="q30-reveal" name="q30" value="reveal">
+        <label for="q30-reveal">Reveal</label><br>
+        <input type="radio" id="q30-quiet" name="q30" value="quiet">
+        <label for="q30-quiet">Keep quiet</label><br>
+        </div>
+
+        <!-- Checkbox Question -->
+        <label for="consent">
+        <input type="checkbox" id="consent" name="consent" required>
+            Yes, I agree to have my future influenced by invisible forces.
+        </label>
+
+
+        <!-- Textarea for Additional Comments -->
+        <label for="comments">Any other thoughts or wishes you'd like to add?</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Survey</button>
+    </form>
+</section>
+
+    <footer>
+        <p>What if everything you know is just part of a grand script, and you are the actor in it?</p>
+    </footer>
+</body>
+</html>

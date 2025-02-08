@@ -1,0 +1,174 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header .intro-text {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Survey Form Section */
+#survey-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    gap: 25px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: inline-flex;
+    align-items: center; /* Vertically center radio/checkbox buttons with text */
+    gap: 5px; /* Adjust the space between the circle and the text */
+    margin-right: 25px;
+    text-wrap: 50%;
+    width: 90%;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Input and Button States */
+input[type="text"]:hover, input[type="radio"]:hover, input[type="checkbox"]:hover, select:hover, textarea:hover {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional glow effect */
+}
+
+input[type="radio"]:checked, input[type="checkbox"]:checked {
+    background-color: #007BFF;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+input:valid, select:valid, textarea:valid {
+    border-color: #28a745;
+}
+
+/* Form Button */
+button {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    background-image: linear-gradient(to right, #343a40, #495057);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+footer p {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f4f9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .intro-text {
+        font-size: 1.1em;
+    }
+
+    #survey-form {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    form {
+        display: block; /* Stack form elements */
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        margin: 5px 0; /* Reduce space around checkboxes/radio buttons */
+    }
+
+    label {
+        font-size: 1em; /* Slightly smaller text for labels on mobile */
+    }
+}
+
